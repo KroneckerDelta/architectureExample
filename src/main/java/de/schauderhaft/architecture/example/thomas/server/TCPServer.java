@@ -59,6 +59,12 @@ public class TCPServer {
 
 			inFromClient.close();
 			connectionSocket.close();
+
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// Architecture-Sleep :-(
+			}
 		}
 	}
 
